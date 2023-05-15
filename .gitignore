@@ -1,32 +1,19 @@
-# Prerequisites
-*.d
+//Is composite number
+//Простое или составное число
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std;
+int main() {
+  cout << "Input Number: ";
+  long int a;
+  cin >> a;
+  if (a != 2 && a != 3 && a != 0 && a != 1) {
+    if (a % 2 == 0 || a % 3 == 0) {
+      cout << "Number " << a << " is composite";
+    }
 
-# Precompiled Headers
-*.gch
-*.pch
+  } else {
+    cout << "Number " << a << " isn't composite";
+  }
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+}
